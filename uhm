@@ -1,0 +1,9 @@
+local NotificationBindable = Instance.new("BindableFunction")
+NotificationBindable.OnInvoke = callback
+--
+game.StarterGui:SetCore("SendNotification",  {
+	Title = "Krnl Executor";
+	Text = "Inject Complete.";
+	Icon = "http://www.roblox.com/asset/?id=5669036604";
+	Duration = 5;
+	Callback = NotificationBindable;
